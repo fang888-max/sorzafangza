@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ร้านของมือสอง SecondLife Shop</title>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background: #f7f5f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #555;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #d67b27;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .intro h2 {
+      font-size: 28px;
+      color: #222;
+    }
+    .intro p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .item:hover {
+      transform: translateY(-5px);
+    }
+    .item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .details {
+      padding: 15px;
+    }
+    .details h3 {
+      margin: 0 0 10px;
+      color: #333;
+      font-size: 18px;
+    }
+    .details p {
+      margin: 0 0 15px;
+      color: #666;
+    }
+    .btn {
+      display: inline-block;
+      background: #d67b27;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #b85f15;
+    }
+
+    footer {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;600&display=swap');
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛍️ SecondLife Shop</h1>
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="#products">สินค้าทั้งหมด</a>
+      <a href="https://line.me/ti/p/yourlineid" target="_blank">ติดต่อเรา</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>ยินดีต้อนรับสู่ร้านของมือสอง SecondLife</h2>
+      <p>ของดีสภาพเยี่ยม ราคาน่ารัก มีชิ้นเดียวในโลก! จองก่อนได้ก่อน 💬</p>
+    </section>
+
+    <section id="products" class="grid">
+
+      <div class="item">
+        <img src="https://via.placeholder.com/300x220?text=รองเท้า+Nike" alt="รองเท้า Nike มือสอง" />
+        <div class="details">
+          <h3>👟 รองเท้า Nike มือสอง</h3>
+          <p>สภาพดี 90% ราคา 800 บาท</p>
+          <a class="btn" href="https://line.me/ti/p/yourlineid" target="_blank">สั่งซื้อทาง LINE</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/300x220?text=เสื้อวินเทจ" alt="เสื้อวินเทจ" />
+        <div class="details">
+          <h3>👕 เสื้อวินเทจ Oversize</h3>
+          <p>ผ้าดี ใส่สบาย ราคา 250 บาท</p>
+          <a class="btn" href="https://line.me/ti/p/yourlineid" target="_blank">สั่งซื้อทาง LINE</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://via.placeholder.com/300x220?text=หนังสือ" alt="หนังสือมือสอง" />
+        <div class="details">
+          <h3>📚 หนังสือ One Piece เล่ม 1</h3>
+          <p>สภาพ 85% ราคา 50 บาท</p>
+          <a class="btn" href="https://line.me/ti/p/yourlineid" target="_blank">สั่งซื้อทาง LINE</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2025 SecondLife Shop | ติดต่อ LINE: @yourlineid
+  </footer>
+
+</body>
+</html>
