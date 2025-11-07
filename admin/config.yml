@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "products"
+    label: "สินค้า"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "ชื่อสินค้า", name: "title", widget: "string" }
+      - { label: "ราคา", name: "price", widget: "string" }
+      - { label: "รายละเอียด", name: "body", widget: "text" }
+      - { label: "รูปภาพ", name: "image", widget: "image" }
